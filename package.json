@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/raphaelcrv/le-musicas-backend#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
   }
 }
