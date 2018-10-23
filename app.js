@@ -1,11 +1,12 @@
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const model1  = require('./models/model1');
 
-app.get('/', function (req, res) {
-    res.send('Hello Worlds!');
-});
+let app = express();
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
-});
+app.use(express.json());
+
+app.use('/api/v1/model1', model1);
+
+module.exports = app;
+
